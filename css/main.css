@@ -140,6 +140,12 @@ a {
     color: #FFFFFF;
 }
 
+@media all and (min-width: 600px;) {
+ #menu li {
+        display: block;
+    }
+}
+
 /* Page */
 #page {
     margin: 0 auto;
@@ -189,9 +195,10 @@ a {
 
 .more {
     display: block;
-    width: 88px;
+    width:auto;
     padding: 5px 5px;
     margin-right: 10px;
+    margin-bottom: 5px;
     background: #222222;
     color: #FFFFFF;
     text-align: center;
@@ -200,8 +207,9 @@ a {
 
 .comments {
     display: block;
-    width: 88px;
+    width: auto;
     padding: 5px 5px;
+    margin-right: 10px;
     background: #222222;
     color: #FFFFFF;
     text-align: center;
