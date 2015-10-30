@@ -102,6 +102,13 @@ a {
     color: #000000;
 }
 
+@media (min-width: 600px;) {
+ logo {
+        float: left;
+        display: inline;
+    }
+}
+
 /* Menu */
 #menu {
     margin: 0 auto;
@@ -136,17 +143,22 @@ a {
     color: #FFFFFF;
 }
 
-@media all and (min-width: 600px;) {
- #menu li {
-        display: inline-block;
-        width: 49%;
+@media (min-width: 600px;) {
+ #menu a {
+        display: inline;
+        width: 50%;
     }
 }
 
-@media all and (min-width: 850px;) {
- #menu li {
-        display: inline-block;
-        width: calc(100%/3);
+@media (min-width: 850px;) {
+ #menu a {
+        width: calc(100% / 3);
+    }
+}
+
+@media (min-width: 1100px;) {
+ #menu a {
+        width: calc(100% / 6);
     }
 }
 
@@ -198,7 +210,6 @@ a {
 }
 
 .more {
-    display: block;
     width:auto;
     padding: 5px 5px;
     margin-right: 10px;
@@ -209,14 +220,14 @@ a {
     text-decoration: none;
 }
 
-@media all and (min-width: 850px;) {
+@media (min-width: 600px;) {
  .more {
-     width:inherit;
+     float: left;
+     width: calc(100% / 3);
     }
 }
 
 .comments {
-    display: block;
     width: auto;
     padding: 5px 5px;
     margin-right: 10px;
@@ -224,6 +235,13 @@ a {
     color: #FFFFFF;
     text-align: center;
     text-decoration: none;
+}
+
+@media (min-width: 600px;) {
+ .comments {
+    float: right;
+    width: calc(100% / 3);
+    }
 }
 
 /* Sidebar */
