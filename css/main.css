@@ -102,7 +102,7 @@ a {
     color: #000000;
 }
 
-@media (min-width: 600px;) {
+@media (min-width: 600px) {
  logo {
         float: left;
         display: inline;
@@ -143,20 +143,21 @@ a {
     color: #FFFFFF;
 }
 
-@media (min-width: 600px;) {
+@media (min-width: 600px) {
  #menu a  {
+     float: right;
         display: inline-block;
         width: 50%;
     }
 }
 
-@media (min-width: 850px;) {
+@media (min-width: 850px) {
  #menu a {
         width: calc(100% / 3);
     }
 }
 
-@media (min-width: 1100px;) {
+@media (min-width: 1100px) {
  #menu a {
         width: calc(100% / 6);
     }
@@ -173,7 +174,7 @@ a {
     padding: 5px 5px 5px 5px;
 }
 
-@media (min-width: 950px;) {
+@media (min-width: 950px) {
  #content {
     float: right;
     margin-left: 1em;
@@ -218,6 +219,7 @@ a {
 }
 
 .more {
+    display: block;
     width:auto;
     padding: 5px 5px;
     margin-right: 10px;
@@ -228,7 +230,7 @@ a {
     text-decoration: none;
 }
 
-@media (min-width: 600px;) {
+@media (min-width: 600px) {
  .more {
      float: left;
      width: calc(100% / 3);
@@ -236,6 +238,7 @@ a {
 }
 
 .comments {
+    display: block;
     width: auto;
     padding: 5px 5px;
     margin-right: 10px;
@@ -245,9 +248,9 @@ a {
     text-decoration: none;
 }
 
-@media (min-width: 600px;) {
+@media (min-width: 600px) {
  .comments {
-    float: right;
+     float: right;
     width: calc(100% / 3);
     }
 }
@@ -258,7 +261,7 @@ a {
     padding: 30px 0px 0px 0px;
 }
 
-@media (min-width: 950px;) {
+@media (min-width: 600px) {
  #sidebar {
     float: left;
     width: calc(100% / 3 - 1em); 
@@ -325,7 +328,7 @@ a {
 
 /* Footer */
 #footer {
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 50px 0 15px 0;
     font-family: 'Abel', sans-serif;
 }
