@@ -115,10 +115,6 @@ a {
     line-height: normal;
 }
 
-#menu li {
-    display: inline;
-}
-
 #menu a {
     display: block;
     line-height: 100%;
@@ -142,7 +138,15 @@ a {
 
 @media all and (min-width: 600px;) {
  #menu li {
-        display: block;
+        display: inline-block;
+        width: 49%;
+    }
+}
+
+@media all and (min-width: 850px;) {
+ #menu li {
+        display: inline-block;
+        width: calc(100%/3);
     }
 }
 
@@ -203,6 +207,12 @@ a {
     color: #FFFFFF;
     text-align: center;
     text-decoration: none;
+}
+
+@media all and (min-width: 850px;) {
+ .more {
+     width:inherit;
+    }
 }
 
 .comments {
