@@ -144,8 +144,8 @@ a {
 }
 
 @media (min-width: 600px;) {
- #menu a {
-        display: inline;
+ #menu a  {
+        display: inline-block;
         width: 50%;
     }
 }
@@ -171,6 +171,14 @@ a {
 /* Content */
 #content {
     padding: 5px 5px 5px 5px;
+}
+
+@media (min-width: 950px;) {
+ #content {
+    float: right;
+    margin-left: 1em;
+    width: calc(100% / 3 * 2);
+    }
 }
 
 .post {
@@ -250,6 +258,13 @@ a {
     padding: 30px 0px 0px 0px;
 }
 
+@media (min-width: 950px;) {
+ #sidebar {
+    float: left;
+    width: calc(100% / 3 - 1em); 
+    }
+}
+
 #sidebar ul {
     margin: 0;
     padding: 5px;
@@ -258,7 +273,7 @@ a {
 
 #sidebar li {
     margin: 0;
-    padding: 0;
+    padding: 5px;
 }
 
 #sidebar li ul {
@@ -308,63 +323,6 @@ a {
     text-decoration: underline;
 }
 
-/* Three Column Footer Content */
-#footer-content {
-    overflow: hidden;
-    margin: 0px auto;
-    color: #D6E2F0;
-}
-
-#footer-content a {
-    color: #92A9B6;
-}
-
-#footer-bg {
-    overflow: hidden;
-    padding: 30px 0px;
-    background: #E8E8E8;
-}
-
-#footer-content h2 {
-    margin: 0px;
-    padding: 0px 0px 20px 0px;
-    letter-spacing: -1px;
-    font-size: 26px;
-    color: #262626;
-}
-
-#footer-content #fbox1 {
-    float: left;
-    width: 300px;
-    margin-right: 50px;
-}
-
-#footer-content #fbox2 {
-    float: left;
-    width: 300px;
-}
-
-#footer-content #fbox3 {
-    float: right;
-    width: 300px;
-}
-
-#column1 {
-    float: left;
-    width: 290px;
-    margin-right: 30px;
-}
-
-#column2 {
-    float: left;
-    width: 280px;
-}
-
-#column3 {
-    float: right;
-    width: 260px;
-}
-
 /* Footer */
 #footer {
     margin: 0 auto;
@@ -373,11 +331,11 @@ a {
 }
 
 #footer p {
-    margin: 0;
+    margin: 5px;
     padding-top: 10px;
+    padding-left: 10px;
     letter-spacing: 1px;
     line-height: normal;
-    font-size: 14px;
     text-transform: uppercase;
     text-align: center;
     color: #5E5E5E;
@@ -394,14 +352,4 @@ a {
 #banner img {
     height: auto;
     width: 100%;
-}
-    
-.list-style1 {
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
-}
-
-.list-style1 a {
-    color: #7F7F7F;
 }
